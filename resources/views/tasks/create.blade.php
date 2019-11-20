@@ -26,8 +26,10 @@
           <label for="">Details</label>
           <input type="text" class="form-control" name="details" />
       </div> 
-      <button type="submit" class="btn btn-primary-outline">Add a task</button>
+      <div>
+          <button type="submit" class="btn btn-primary-outline">Add a task</button>
+      </div>
   </form>
 </div>
 </div>
-
+@endsection

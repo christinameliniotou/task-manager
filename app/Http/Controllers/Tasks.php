@@ -13,7 +13,9 @@ use App\Task;
 
 class Tasks extends Controller {
 public function index() {
-    
+    $tasks = Task::all();
+
+    return view("tasks.index", compact('tasks'));
 }
 public function store(Request $request)
 {
@@ -35,6 +37,26 @@ function create()
     return view('tasks.create');
 }
 
+function edit($id)
+{
+    $task = Task::find($id);
+    return view('tasks.edit', compact('task'));
+}
+
+public function update(Request $request, $id)
+{
+    $request->validate([
+        'title'=>'required',
+        'details'=>'required'
+    ]);
+
+    $task = Task::find($id);
+    $task->title = $request->get('title');
+    $task->details = $request->get('details');
+    $task->save();
+    
+    return redirect('/tasks')->with('success', 'Task updated');
+}
 /**
  * @param \Illuminate\Http\Request $_request
  * @return \Illuminate\Http\Response
