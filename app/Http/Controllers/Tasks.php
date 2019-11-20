@@ -69,9 +69,12 @@ public function update(Request $request, $id)
  * @reeturn \Illuminate\Http\Response
  */
 
- function show($id)
- {
-     //
- }
+public function destroy($id)
+{
+    $task = Task::find($id);
+    $task->delete();
+
+    return redirect('/tasks')->with('success', 'Contact deleted!');
+}
 
 } 
