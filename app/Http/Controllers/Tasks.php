@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use DB;
 use App\Task;
 
-// CRUD actions
+// Tasks controller allows the user to show, create, update, and delete tasks. 
 
 /**
  * * @return \Illuminate\Http\Response
