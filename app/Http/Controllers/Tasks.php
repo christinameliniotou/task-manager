@@ -32,8 +32,9 @@ class Tasks extends Controller {
             'title'=> $request->get('title'),
             'details'=> $request->get('details')
         ]);
-    $contact->save();
-    return redirect('/tasks')->with('success', 'Task saved!');
+
+        $contact->save();
+        return redirect('/tasks')->with('success', 'Task saved!');
     }
 
     function create() 
@@ -71,7 +72,7 @@ class Tasks extends Controller {
      * Display the specified resource
      * 
      * @param int $id
-     * @reeturn \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response
      */
 
     public function destroy($id)
