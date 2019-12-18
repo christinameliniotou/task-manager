@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use DB;
 use App\Task;
 
+// CRUD actions
+
 /**
  * * @return \Illuminate\Http\Response
 */
