@@ -1,5 +1,4 @@
-A simple task manager application. Add, edit and delete tasks. 
-Build in Laravel. 
+* A simple task manager application. Add, edit and delete tasks. 
 
 # Usage
 
