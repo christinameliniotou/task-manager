@@ -8,4 +8,7 @@
 3. Run the web server or write the command php artisan serve. 
 
 ![Image description](https://github.com/christinameliniotou/task-manager/blob/master/Screen%20Shot%202019-12-18%20at%2010.33.25.png)
+
 ![Image description](https://github.com/christinameliniotou/task-manager/blob/master/Screen%20Shot%202019-12-18%20at%2010.33.36.png)
+
+
